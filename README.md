@@ -1,66 +1,59 @@
-## Foundry
+# Stripe for Web3 Smart Contracts
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+Stripe for Web3 is a decentralized recurring billing protocol powered by ERC-4337 Account Abstraction.
 
-Foundry consists of:
+The protocol allows merchants to create subscription plans while subscribers authorize recurring payments without surrendering custody of their assets.
 
-- **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
-- **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
-- **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
-- **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+---
 
-## Documentation
+## Contracts
+contracts/
 
-https://book.getfoundry.sh/
+Web3BillingProtocol.sol
 
-## Usage
+Web3SubscriptionModule.sol
 
-### Build
+MockERC20.sol
 
-```shell
-$ forge build
-```
 
-### Test
+---
 
-```shell
-$ forge test
-```
+## Components
 
-### Format
+### Web3BillingProtocol
 
-```shell
-$ forge fmt
-```
+Responsible for
 
-### Gas Snapshots
+- Merchant registration
+- Billing plan creation
+- Customer subscriptions
+- Billing permissions
+- Protocol fees
+- Billing history
+- Subscription lifecycle
 
-```shell
-$ forge snapshot
-```
+---
 
-### Anvil
+### Web3SubscriptionModule
 
-```shell
-$ anvil
-```
+Responsible for
 
-### Deploy
+- Account Abstraction execution
+- Permission validation
+- Authorized recurring payments
+- Subscription execution
 
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
+---
 
-### Cast
+### MockERC20
 
-```shell
-$ cast <subcommand>
-```
+Development ERC20 token used for
 
-### Help
+- Testing
+- Integration
+- Local development
+- End-to-end billing validation
 
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+---
+
+## Protocol Workflow
