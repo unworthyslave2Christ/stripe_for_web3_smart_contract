@@ -57,3 +57,107 @@ Development ERC20 token used for
 ---
 
 ## Protocol Workflow
+
+Merchant
+
+↓
+
+Create Billing Plan
+
+↓
+
+Customer
+
+↓
+
+Subscribe
+
+↓
+
+Grant Permission
+
+↓
+
+Billing Worker
+
+↓
+
+Execute UserOperation
+
+↓
+
+Transfer ERC20
+
+↓
+
+Update Billing State
+
+
+---
+
+## Features
+
+- ERC-4337
+- Account Abstraction
+- Subscription billing
+- Merchant management
+- Billing permissions
+- Automatic renewals
+- Billing plans
+- Customer subscriptions
+- Protocol fees
+- Events
+
+---
+
+## Technologies
+
+- Solidity
+- Foundry
+- OpenZeppelin
+- ERC-4337
+- Viem Compatible
+
+---
+
+
+---
+
+## Supported Networks
+
+Development
+
+- Anvil
+
+Testing
+
+- Arbitrum Sepolia
+
+Future
+
+- Rootstock
+- Ethereum
+- Base
+- Optimism
+
+---
+
+## Roadmap
+
+Current
+
+- Merchant onboarding
+- Billing plans
+- Subscriptions
+- Billing execution
+
+Upcoming
+
+- SDK
+- Billing analytics
+- Marketplace integrations
+- Protocol governance
+- Multi-token support
+- Cross-chain billing
+
+
